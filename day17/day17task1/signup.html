@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" align="center" style="background-color:lightblue" >
+        <label for="fn">First Name</label>
+
+        <input type="text" id="fn" placeholder="first name" name="firstname"><br><br>
+        
+        <label for="me">Middle Name</label>
+        
+        <input type="text" id="me" placeholder="middle name" name="middlename"><br><br>
+
+        <label for="le">Last Name</label>
+        
+        <input type="text" id="le" placeholder="last name" name="lastname"><br><br>
+
+
+         <label for="db">DOB</label>
+        
+        <input type="date" id="db" name="DOB" required pattern="\d{2}-\d{2}-\d{4}"><br><br>
+
+
+
+        <label for="el">email</label>
+        
+        <input type="email" id="el" name="email" required pattern="[a-z0-9._]+@[a-z]{5}.[a-z]{2,4}" title="example@gmail.com"><br><br>
+
+        <label for="phone">Phone</label>
+       
+        <input type="number" id="phone" maxlength="10"><br><br>
+        <input type="submit" value="signup" formaction="patern.html" style="background-color:rgb(87, 226, 87)">
+
+
+
+
+
+    </form>
+</body>
+</html>

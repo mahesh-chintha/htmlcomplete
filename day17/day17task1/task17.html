@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form align="center" style="background-color:lightblue" style="border-padding="100%">
+    <h1>SIGN IN FORM</h1>
+
+<label for="ue">Username:</label>
+
+<input type="text" id="ue" placeholder="Enter username" name="username"><br><br>
+
+<label for="pd">Password</label>
+
+<input type="Password" id="pd" placeholder="Enter password" name="password" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}" title="enter minimum one (uppercase lowercase number special character) minimum of 8 digits"><br>
+
+<a href="forget.html" style="color:red">forget password</a><br><br>
+<input type="submit" value="signin" formaction="sign.html" style="background-color:rgb(87, 226, 87)"><br><br>
+<input type="submit" value="signup" formaction="signup.html" style="background-color:rgb(87, 226, 87)"><br><br>
+<br>
+
+    </form>
+
+
+</body>
+</html>
