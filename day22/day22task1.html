@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:100px;
+        }
+div{
+background-color:lightblue;
+
+width:1000px;
+height:1000px;
+position: relative;
+border:5px solid black;
+}
+.el1{
+    width:200px;
+    height:200px;
+    position: absolute;
+top:-60px;
+left:-70px;
+border:5px ridge brown;
+z-index: 1000;
+
+}
+.el2{
+    width:200px;
+    height:200px;
+    position: absolute;
+top:-60px;
+right:-70px;
+border:5px ridge brown;
+}
+.el3{
+    width:200px;
+    height:200px;
+    position: absolute;
+bottom:-60px;
+left:-70px;
+border:5px ridge brown;
+}
+
+.el4{
+    width:200px;
+    height:200px;
+    position: absolute;
+bottom:-60px;
+right:-70px;
+border:5px ridge brown;
+}
+
+
+    .el5 {
+    position: absolute;
+    top: -60px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 200px; 
+    height: 200px; 
+    border:5px ridge brown;
+}
+
+.el6{
+    position: absolute;
+    bottom: -60px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 200px; 
+    height: 200px; 
+    border:5px ridge brown;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+
+<img src="prepimages/picture1.png" class="el1" alt="">
+<img src="prepimages/picture2.png" class="el2" alt="">
+<img src="prepimages/picture3.png" class="el3" alt="">
+<img src="prepimages/picture4.png" class="el4" alt="">
+<img src="prepimages/picture5.jpeg" class="el5" alt="">
+<img src="prepimages/picture6.jpeg" class="el6" alt="">
+
+    </div>
+</body>
+</html>
+
+<!-- when we use transform both bottom and left it will be center -->
