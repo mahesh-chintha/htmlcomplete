@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    html,body{
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        scrollbar-width: none;
+       
+    }
+nav{
+    display:flex;
+    background-color: white;
+    color:black;
+    justify-content: space-between;
+    
+    width:100%;
+    position:fixed;
+    margin: 0;
+}
+#ham{display: none;}
+
+.nav2{
+    display: flex;
+    gap:20px;
+}
+
+.item1{
+    display:flex ;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+  
+
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap:40px;
+}
+.item2 img{
+    flex-basis: 30%;
+
+}
+
+.item3{
+  flex-basis: 30%;  
+}
+.item3 p{
+    font-size: 2em;
+    font-style: italic;
+}
+.item3 h1{
+font-style: italic;
+}
+
+.item4{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item5 p{
+    font-size: 2em;
+    font-style: italic;
+    flex-basis: 30%;
+}
+
+.item6 h1{
+    font-style: italic;
+    flex-basis: 30%;
+}
+
+
+.item7{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:99%;
+    height:7%;
+}
+nav h1{
+    font-style: italic;
+}
+nav{
+    box-shadow:0px 5px grey ;
+}
+.bcg{
+    background-image: url(day26images/tassk2img1.jpg);
+    width:100vw;
+    height:100vh;
+    background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+
+.item1{
+    display: flex;
+    
+    justify-content:center;
+    align-items:center ;
+    
+}
+.bcg{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.ts{
+    text-shadow:5px 5px 10px black;
+}
+@media screen and (width>568px) and (width<768px) {
+    .item4 {
+        flex-direction: column;
+
+
+    }
+    .item2{flex-direction: column;}
+    .item5 p,.item5 h1{
+    font-size: 1.2em;
+    font-style: italic;
+    flex-basis: 20%;
+    align-self: center;
+}
+
+.item6 h1{
+    font-style: italic;
+    flex-basis: 20%;
+    align-self: center;
+}
+
+.item2 img{
+    flex-basis: 20%;
+    width:80vw;
+    align-self: center;
+
+}
+.item3 p,.item3 h1{
+    font-size: 1.2em;
+    font-style: italic;
+    align-self: center;
+text-align: center;
+}
+.bcg{
+    background-image: url(day26images/tassk2img1.jpg);
+    width:100%;
+    height:50%;
+    background-repeat: no-repeat;
+   background-size: contain;
+   margin-top: 150px;
+   
+   
+}
+.nav2{
+    display: none;
+}
+#ham{display: inline;}
+
+#ham:focus~.nav2{
+display: inline-block;
+}
+
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+  <nav>
+   <div><h1>Gourmat au catering</h1></div> 
+   <div id="ham" tabindex="0">&#9776;</div>
+   <div class="nav2">
+     <h1>About</h1>
+    <h1>Menu</h1>
+    <h1>Contact</h1>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </nav>
+    
+
+<div class="item1">
+    <div class="bcg"><h1>Le catering</h1></div>
+    
+</div>
+
+<div class="item2">
+<img src="day26images/task2img2.jpg" alt="">
+<div class="item3">
+    <h1>About Catering</h1>
+    <p>Tradition since 1889</p>
+<p>The Catering was founded in blabla by Mr. Smith <br>
+     in lorem ipsum dolor sit amet <br>
+      consectetur adipiscing elit consectetur adipiscing elit <br>
+       sed do eiusmod tempor incididunt ut labore et dolore <br>
+        magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+         consequat. Duis aute iruredolor in reprehenderit in voluptate <br>
+          velit esse cillum dolore eu fugiat nulla pariatur. <br>
+          We only use seasonal ingredients.</p>
+</div>
+</div>
+
+<div class="item4">
+    <div class="item5">
+<h1 class="ts">Our Menu</h1>
+ <h1>Bread Basket</h1>
+<p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+
+<h1>Honey Almond Granola with Fruits</h1>
+<p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+<h1>Belgian Waffle</h1>
+<p>Vanilla flavored batter with malted flour 7.50</p>
+
+
+<h1>Scrambled eggs</h1>
+<p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+</p>
+
+<h1>Blueberry Pancakes</h1>
+<p>With syrup, butter and lots of berries 8.50</p>
+</div>
+<div class="item6">
+    <img src="day26images/task2img3.jpg" alt="">
+</div>
+</div>
+
+
+<div class="item7">
+ powered by <a href="#">W3.css</a> 
+</div>
+</body>
+</html>
